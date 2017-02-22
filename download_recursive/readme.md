@@ -1,15 +1,14 @@
 # WinSCP - Download files with specific extension recursively
 
+> How to quickly get all php scripts under /images ?  This script given the answer
+
 The WinSCP FTP client ([website](https://winscp.net/eng/index.php)) allow to run a script that make possible automation.
 
 The idea under the script below is to connect to a FTP server, go to the ftp root folder and then, recursively, get all files having the php extensions.
 
 I've coded this small script when facing the following problem : there were a lot of viruses in the /images folder of a website and that specific folder has hundreds of subfolders and the totalsize of /images was bigger than 1 GB.   
 
-> How to quickly get all php scripts under /images ?  This script given the answer
-
 ## The script
-
 
 ```
 # Automatically abort script on errors 

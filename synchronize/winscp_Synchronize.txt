@@ -8,8 +8,8 @@ option confirm off
 # Connect; **change this value for your own configuration**
 open ftp://USERNAME:PASSWORD@HOST_OR_IP:PORT/
 
-# Force binary mode transfer
-option transfer ascii
+# Force binary mode transfer (ascii | binary or, not set : automatic)
+# option transfer ascii
 
 # --------------------------------------------------------------------------------------------
 # Synchronize the folder "C:\Christophe\" (local) to /Christophe (remote)

@@ -65,3 +65,9 @@ If everything is correctly set up, winscp will start a session terminal and will
 
 ## More info
 More info about the Synchronize verb of WinSCP : https://winscp.net/eng/docs/scriptcommand_synchronize
+
+* If files/folders are already there, don't do anything.
+* If there are new files/folders, copy them.
+* If files/folders are no more on the local drive, remove them from the remote server.
+
+So local is the master.

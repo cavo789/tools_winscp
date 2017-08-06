@@ -71,3 +71,11 @@ More info about the Synchronize verb of WinSCP : https://winscp.net/eng/docs/scr
 * If files/folders are no more on the local drive, remove them from the remote server.
 
 So local is the master.
+
+### Local / Remote / Both
+
+See the line 25 of the .txt script : synchronize remote.
+
+Choose remote, local or both :
+
+`When the first parameter is local, changes from remote directory are applied to local directory. When the first parameter is remote, changes from the local directory are applied to the remote directory. When the first parameter is both, both local and remote directories can be modified.` (source)[https://winscp.net/eng/docs/scriptcommand_synchronize#remarks]

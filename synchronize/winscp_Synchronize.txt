@@ -14,12 +14,14 @@ open ftp://USERNAME:PASSWORD@HOST_OR_IP:PORT/
 #
 # Get all files / folders from the local drive and make a copy to the FTP drive.
 #
-# --> Copy new files / new foldres
+# --> Copy new files / new folders
 # --> Delete files / folders not anymore on local drive from the remote drive
 
 lcd "C:\Christophe"   
 cd /Christophe
-synchronize remote -preservetime -transfer=automatic
+
+# The applied mask means : ignore the .git folder
+synchronize remote -preservetime -transfer=automatic -filemask="|.git/"
 
 # ------------------------------------
 # The end

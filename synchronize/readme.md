@@ -1,4 +1,5 @@
 # WinSCP - Synchronize files from a local path to a remote drive
+
 > Copy files/folders from a local disk to a remote drive
 
 The WinSCP FTP client ([website](https://winscp.net/eng/index.php)) allow to run a script that make possible automation.
@@ -34,7 +35,10 @@ option transfer ascii
 
 lcd "C:\Christophe"
 cd /Christophe
-synchronize remote
+
+
+# The applied mask means : ignore the .git folder
+synchronize remote -preservetime -transfer=automatic -filemask="|.git/"
 
 # ------------------------------------
 # The end
@@ -64,6 +68,7 @@ exit
 If everything is correctly set up, winscp will start a session terminal and will start the synchronization.
 
 ## More info
+
 More info about the Synchronize verb of WinSCP : https://winscp.net/eng/docs/scriptcommand_synchronize
 
 * If files/folders are already there, don't do anything.

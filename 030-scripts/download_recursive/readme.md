@@ -48,6 +48,6 @@ Change the file extension in `get -filemask:*.php *` to the desired extension.
    8. save the script
 3. Start a DOS session (start -> run -> cmd.exe)
 4. Go to your `c:\temp\ftp` folder: type `cd \temp\ftp`
-5. Run `winscp.com` from there: type `"c:\program files (86)\WinSCP\WinSCP.com" /script="c:\temp\ftp\rget.txt"`
+5. Run `winscp.com` from there: type `"C:\Program Files (x86)\WinSCP\WinSCP.com" /script="c:\temp\ftp\rget.txt"`
 
 If everything is correctly set up, WinSCP will start a session terminal and will start to download each `.php` files found under your remote folder (sub-folders included).
